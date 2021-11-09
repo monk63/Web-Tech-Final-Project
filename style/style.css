@@ -1,13 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
 
-*{
+body{
+  overflow-x: hidden;
     box-sizing:border-box;
     margin: 0;
     padding:0;
-    background-color: color #24252A;
+    color: #505962;
+     
+
+}
+/* Navbar */
+
+.navbar {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size:0.9rem;
+  letter-spacing: .1rem;
+  background:rgba(0,0,0,.6)!important;
+    
+}   
+.navbar-brand img{
+  height: 3rem;
 
 }
 
+.navbar-nav li{
+  padding-right: .7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color: #8d1e8d;
+  padding-top:.8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #251e8d;
+}
+
+
+
+
+
+
+/* 
 
 .layout_padding {
     padding: 90px 0;
@@ -51,22 +87,8 @@ header{
     display: flex;
 
     padding: 30px 10%;
-}
-
- /* .navbar-brand img{
-    height: 2rem;
-    
-}   */
-
-/* .banner img{
-    width:100%;
-    height:100%;
-    
-    -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: bottom right;
-     object-position: bottom right;
 } */
+
 
 
 /*---slider ---*/
