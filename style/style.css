@@ -106,3 +106,20 @@ header{
 .carousel-caption h5{
  font-size: 42px;
 }
+
+
+/*---Services ---*/
+
+.narrow{
+ width: 75%;
+ margin: 0 auto;
+ padding-top: 2rem;
+}
+
+.btn-md{
+ border-width: medium;
+ border-radius: 0;
+ padding: -6rem 1.1rem;
+ text-transform: uppercase;
+ margin: 1rem;
+}
