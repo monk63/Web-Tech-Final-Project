@@ -58,7 +58,7 @@ body{
  /*---Customer on home page ---*/
  
  .narrow{
-  width: 75%;
+  width: 65%;
   margin: 0 auto;
   padding-top: 2rem;
  }
@@ -70,6 +70,8 @@ body{
   text-transform: uppercase;
   margin: 1rem;
  }
+
+ /*---Footer ---*/
 
  #subhead {
   font-family: Lato;
