@@ -71,6 +71,13 @@ body{
   margin: 1rem;
  }
 
+ #subhead {
+  font-family: Lato;
+  color: white;
+  font-size: 15pt;
+  font-weight: 400;
+
+}
 
  #footer {
   font-family: Lato, sans-serif;
