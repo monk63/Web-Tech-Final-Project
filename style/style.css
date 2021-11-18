@@ -18,20 +18,6 @@ body{
 	padding:0;
 	box-sizing: border-box;
 }
-/*
-.container{
-	max-width: 1170px;
-	margin:auto;
-}
-.row{
-	display: flex;
-	flex-wrap: wrap;
-}
-ul{
-	list-style: none;
-}*/
-
-/* Navbar */
 
 .navbar {
   text-transform: uppercase;
@@ -60,7 +46,9 @@ ul{
   color: #251e8d;
 }
 
-/*---slider ---*/
+  /*--- Vechicle slider section ---*/
+
+/*---Footer---*/
 
 .footer {
 	background: #303036;
@@ -156,5 +144,4 @@ ul{
 	left: 0px;
 	padding-top: 20px;
   }
-
 
