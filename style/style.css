@@ -24,7 +24,7 @@ body{
   font-weight: 500;
   font-size:0.9rem;
   letter-spacing: .1rem;
-  background:rgba(0,0,0,.6)!important;
+  background:rgba(134, 103, 103, 0.6)!important;
     
 }   
 .navbar-brand img{
@@ -47,6 +47,19 @@ body{
 }
 
   /*--- Vechicle slider section ---*/
+.heading{
+	 text-align: center;
+ }
+.heading span{
+	 font-weight: 500;
+	 color: #4d3166;
+ }
+.heading p{
+	 font-size: 0.938rem; ;
+	 font-weight: 300;
+ }
+ /*--- End Vechicle slider section ---*/
+
 
 /*---Footer---*/
 
