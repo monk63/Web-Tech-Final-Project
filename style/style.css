@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root{
-    --yellow:#f9d806;
-    --light-yellow:#ffee80;
+    --yellow:#1d34b9;
+    --light-yellow:#2741d6;
     --black:#130f40;
-    --light-color:#666;
+    --light-color:rgb(179, 39, 39);
     --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
-    --border:.1rem solid rgba(0,0,0,.1);
+    --border:.1rem solid rgba(49, 39, 39, 0.1);
 }
 body{
   line-height: 1.5;
@@ -53,7 +53,7 @@ body{
   color: #251e8d;
 }
 
-  /*--- Vechicle slider section ---*/
+  /*--- Section ---*/
   section{
     padding:2rem 9%;
 }
@@ -101,6 +101,67 @@ body{
 .btn:hover{
     background:var(--yellow);
 }
+
+  /*--- Icon slider section ---*/
+
+  .icons-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: #eee;
+}
+
+.icons-container .icons{
+    background:#fff;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding:2rem;
+    gap:1.5rem;
+}
+
+.icons-container .icons i{
+    height:5rem;
+    width:5rem;
+    line-height:5rem;
+    font-size:2.5rem;
+    color:var(--black);
+    background:#eee;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.icons-container .icons .content h3{
+    font-size: 2.5rem;
+    color:var(--yellow);
+}
+
+.icons-container .icons .content p{
+    font-size: 1.5rem;
+    color:var(--light-color);
+}
+
+.icons-container .icons:hover{
+    background:var(--black);
+}
+
+.icons-container .icons:hover i{
+    background:var(--yellow);
+}
+
+.icons-container .icons:hover .content h3{
+    color:#fff;
+}
+
+.icons-container .icons:hover .content p{
+    color:#eee;
+}
+
+
+    /*--- Vechicle slider section ---*/
  .vehicles .vehicles-slider{
     padding-bottom: 5rem;
 }

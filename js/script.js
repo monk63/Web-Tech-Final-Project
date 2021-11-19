@@ -1,5 +1,10 @@
 
 
+//Icons on home page
+
+
+
+// Vechicle Slider on used car page
 var swiper = new Swiper(".vehicles-slider", {
     grabCursor: true,
     centeredSlides: true,  
