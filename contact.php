@@ -7,35 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <!-- Custom Styling -->
     <link rel="stylesheet" href="style/style.css">
 
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <!-- Boostrap Styling -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-        </script>
-
-    <!-- responsive style -->
-    <link href="style/responsive.css" rel="stylesheet" />
-
-
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <title>The Middlemen Garage</title>
 
@@ -62,19 +44,19 @@
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
+                                <a class="nav-link" href="indexphpl">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
+                                <a class="nav-link" href="about.php">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="usedcars.html">Used Cars</a>
+                                <a class="nav-link" href="usedcars.php">Used Cars</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="newcars.html">New Cars</a>
+                                <a class="nav-link" href="newcars.php">New Cars</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
+                                <a class="nav-link" href="contact.php">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -83,36 +65,67 @@
 
         </header>
         <!--end header section -->
-
-      
     </div>
 
-    <!--- Start of Contact Section --->
-    <div id="contact" class="offset">
+    <!--Our Team section -->
+     
+    <div class="wrapper">
+  <h1>Our Team</h1>
+  <div class="team">
+    <div class="team_member">
+      <div class="team_img">
+        <img src="images/pic-1.png" alt="Team_image">
+      </div>
+      <h3>Paul Doe</h3>
+      <p class="role">UI developer</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
+    </div>
+    <div class="team_member">
+      <div class="team_img">
+        <img src="images/pic-10.png" alt="Team_image">
+      </div>
+      <h3>Rosie Meg</h3>
+      <p class="role">Tester</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p></div>
+    <div class="team_member">
+      <div class="team_img">
+        <img src="images/pic-8.png" alt="Team_image">
+      </div>
+      <h3>Alex Wood</h3>
+      <p class="role">Support Lead</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
+    </div>
+  </div>
+</div>
+        
+    <!--ENd of our team section -->
 
-        <div class="col-12 narrow text-center ">
-            <h1> CONTACT </h1>
-            <p class="lead"> Working 24/7 to get you the best car deals
-                in the market. <br> Get in touch with our team today.</p>
-            <a class="btn btn-secondary btn-md" href="#"> CLICK FOR MORE ENQUIRES</a>
+
+    <!--Get in touch section -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"><span>contact</span> us</h1>
+
+        <div class="row">
+
+            <iframe class="map" src="https://maps.google.com/maps?q=accra%20tema&t=k&z=13&ie=UTF8&iwloc=&output=embed"
+                allowfullscreen="" loading="lazy"></iframe>
+
+            <form action="">
+                <h3>Get in Touch</h3>
+                <input type="text" placeholder="your name" class="box">
+                <input type="email" placeholder="your email" class="box">
+                <input type="tel" placeholder="subject" class="box">
+                <textarea placeholder="your message" class="box" cols="30" rows="10"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+
         </div>
 
-    </div>
+    </section>
 
-    <!--- End of Contact Section --->
-    <!--- Start of Vehicle Section --->
-    <div class="cars" id="cars">
-        <div class="heading">
-            <span>Used Cars</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde deleniti inventore atque reprehenderit
-                sapiente ea animi ad minima ullam quam dolores eos, hic deserunt libero possimus eaque eveniet? Quasi,
-                mollitia!</p>
-
-        </div>
-    </div>
-
-    <!--- End of Vehicle Section --->
-
+    <!--End of Get in touch section -->
 
     <!-- footer -->
 
@@ -184,11 +197,11 @@
 
     <!-- End of footer -->
 
+    <!-- Slider JS -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
-
+    <!-- Main JS -->
     <script src="js/script.js"></script>
-
-
 
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
