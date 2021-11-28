@@ -1,15 +1,20 @@
+<?php 
+	include('database>/server.php');
+?>
 
+
+<!-- This checks if the user is login
+     This page is only accessible to logged in users  -->
 <?php 
   session_start(); 
-
   if (!isset($_SESSION['username'])) {
   	$_SESSION['msg'] = "You must log in first";
-  	header('location: ../login.php');
+  	header('location: registration/login.php');
   }
   if (isset($_GET['logout'])) {
   	session_destroy();
   	unset($_SESSION['username']);
-  	header("location: login.php");
+  	header("location: registration/login.php");
   }
 ?>
 
@@ -50,16 +55,11 @@
   <!-- responsive style -->
   <link href="style/responsive.css" rel="stylesheet" />
 
-
-
   <title>The Middlemen Garagess</title>
 
 </head>
 
 <body data-spy="scroll" data-target="#navbarResponsive">
-
-
-
 
   <!-- Home Section -->
   <div id="home">
@@ -74,12 +74,9 @@
       	</h3>
       </div>
   	<?php endif ?>
-
-    <!-- logged in user information -->
-    <?php  if (isset($_SESSION['username'])) : ?>
-    	<p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
+       <!-- logged in user information -->
+       <?php  if (isset($_SESSION['username'])) : ?>
     
-
     <!-- Header Section -->
     <header class="header_section">
       <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
@@ -110,12 +107,14 @@
               <li class="nav-item">
                 <a class="nav-link" href="contact.php">Contact</a>
               </li>
-
               <li class="nav-item">
-              <p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
+              <p class="nav-link" style="color: green;">Welcome <strong><?php echo $_SESSION['username']; ?>
+            </strong>
+          </p>
+              </li>
+              <li class="nav-item">
+               <a class="nav-link"  href="index.php?logout='1'" style="color: red;">logout</a> 
     <?php endif ?>
-                
-
               </li>
             </ul>
           </div>
