@@ -17,6 +17,22 @@ if (isset($_POST['reg_user'])) {
     $password_1 = mysqli_real_escape_string($db, $_POST['password_1']);
     $password_2 = mysqli_real_escape_string($db, $_POST['password_2']);
 
+
+    //Regex
+    //Check for first name
+    if (!preg_match('/[a-zA-Z]+$/', $username)) {
+        $errors['username'] = 'Username should be letters only';
+    }
+
+ 
+     // validate email with regex
+     $regex = "/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix";
+     // set error if not an email
+     if(!preg_match($regex, $email)){array_push($errors, "Enter a valid email");}
+
+
+
+
     // form validation: ensure that the form is correctly filled ...
     // by adding (array_push()) corresponding error unto $errors array
     if (empty($username)) {
@@ -66,26 +82,24 @@ if (isset($_POST['reg_user'])) {
 if (isset($_POST['login_user'])) {
     $username = mysqli_real_escape_string($db, $_POST['username']);
     $password = mysqli_real_escape_string($db, $_POST['password']);
-  
+
     if (empty($username)) {
         array_push($errors, "Username is required");
     }
     if (empty($password)) {
         array_push($errors, "Password is required");
     }
-  
+
     if (count($errors) == 0) {
         $password = md5($password);
         $query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
         $results = mysqli_query($db, $query);
         if (mysqli_num_rows($results) == 1) {
-          $_SESSION['username'] = $username;
-          $_SESSION['success'] = " ";
-          header('location: ../index.php');
-        }else {
+            $_SESSION['username'] = $username;
+            $_SESSION['success'] = " ";
+            header('location: ../index.php');
+        } else {
             array_push($errors, "Wrong username/password combination");
         }
     }
-  }
-  
-  ?>
+}
