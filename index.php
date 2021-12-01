@@ -1,5 +1,5 @@
 <?php 
-	include('database>/server.php');
+	include('database/server.php');
 ?>
 
 
@@ -55,7 +55,7 @@
   <!-- responsive style -->
   <link href="style/responsive.css" rel="stylesheet" />
 
-  <title>The Middlemen Garagess</title>
+  <title>The Middlemen Garages</title>
 
 </head>
 

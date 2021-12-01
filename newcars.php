@@ -1,6 +1,12 @@
 <!-- This checks if the user is login
      This page is only accessible to logged in users  -->
 
+     <?php 
+	include('database/server.php');
+?>
+
+
+
 <?php 
   session_start(); 
 
