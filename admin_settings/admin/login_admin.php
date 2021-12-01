@@ -1,5 +1,5 @@
 <?php 
-    include('../../database/server.php')
+    include('../admin_server.php')
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +26,7 @@
             <input type="password" name="password">
         </div>
         <div class="input-group">
-            <button type="submit" class="btn" name="login_user">Login</button>
+            <button type="submit" class="btn" name="login_admin">Login</button>
         </div>
         <p>
             Not yet an Admin? <a href="register_admin.php">Admin Sign up</a>
