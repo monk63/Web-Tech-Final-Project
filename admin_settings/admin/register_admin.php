@@ -1,18 +1,18 @@
-<?php include('../database/server.php') ?>
+<?php include('../../database/server.php') ?>
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>Registration Page</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Admin Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="../../style/style.css">
 </head>
 
 <body>
     <div class="header">
-        <h2>Register</h2>
+        <h2>Admin Registration Page</h2>
     </div>
 
-    <form method="post" action="register.php">
+    <form method="post" action="register_admin.php">
         <?php include('errors.php'); ?>
         <div class="input-group">
             <label>Username</label>
@@ -31,10 +31,10 @@
             <input type="password" name="password_2">
         </div>
         <div class="input-group">
-            <button type="submit" class="btn" name="reg_user">Register</button>
+            <button type="submit" class="btn" name="reg_user">Register New Admin</button>
         </div>
         <p>
-            Already a member? <a href="login.php">Sign in</a>
+            Already an admin? <a href="login_admin.php">Sign in</a>
         </p>
     </form>
 </body>

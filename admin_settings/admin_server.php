@@ -57,11 +57,11 @@ if (isset($_POST['reg_user'])) {
 
     if ($user) { // if user exists
         if ($user['username'] === $username) {
-            array_push($errors, "Username already exists or");
+            array_push($errors, "Admin not authenticated!!!");
         }
 
         if ($user['email'] === $email) {
-            array_push($errors, "Email already exists. Please try again.");
+            array_push($errors, " Please try again.");
         }
     }
 
@@ -69,12 +69,12 @@ if (isset($_POST['reg_user'])) {
     if (count($errors) == 0) {
         $password = md5($password_1); //encrypt the password before saving in the database
 
-        $query = "INSERT INTO users (username, email, password) 
+        $query = "INSERT INTO admin (username, email, password) 
   			  VALUES('$username', '$email', '$password')";
         mysqli_query($db, $query);
         $_SESSION['username'] = $username;
         $_SESSION['success'] = " ";
-        header('location: ../registration/login.php');
+        header('location: admin/login_admin.php');
     }
 }
 
@@ -84,7 +84,7 @@ if (isset($_POST['login_user'])) {
     $password = mysqli_real_escape_string($db, $_POST['password']);
 
     if (empty($username)) {
-        array_push($errors, "Username is required");
+        array_push($errors, "Admin name is required");
     }
     if (empty($password)) {
         array_push($errors, "Password is required");
@@ -92,14 +92,14 @@ if (isset($_POST['login_user'])) {
 
     if (count($errors) == 0) {
         $password = md5($password);
-        $query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+        $query = "SELECT * FROM admin WHERE username='$username' AND password='$password'";
         $results = mysqli_query($db, $query);
         if (mysqli_num_rows($results) == 1) {
             $_SESSION['username'] = $username;
             $_SESSION['success'] = " ";
-            header('location: ../index.php');
+            header('location: admin/home.php');
         } else {
-            array_push($errors, "Wrong username/password combination");
+            array_push($errors, "Wrong admin name/password combination");
         }
     }
 }

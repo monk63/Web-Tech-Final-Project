@@ -1,13 +1,13 @@
 <?php 
-    include('../database/server.php')
+    include('../../database/server.php')
 ?>
 
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>User Login Page</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Admin Login Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="../../style/style.css">
 </head>
 
 <body>
@@ -15,7 +15,7 @@
         <h2>Login</h2>
     </div>
 
-    <form method="post" action="login.php">
+    <form method="post" action="login_admin.php">
         <?php include('errors.php'); ?>
         <div class="input-group">
             <label>Username</label>
@@ -29,7 +29,7 @@
             <button type="submit" class="btn" name="login_user">Login</button>
         </div>
         <p>
-            Not yet a member? <a href="register.php">Sign up</a>
+            Not yet an Admin? <a href="register_admin.php">Admin Sign up</a>
         </p>
     </form>
 </body>
