@@ -33,8 +33,7 @@ if (isset($_POST['reg_user'])) {
 
 
 
-    // form validation: ensure that the form is correctly filled ...
-    // by adding (array_push()) corresponding error unto $errors array
+    // form validation: ensure that the form is correctly filled 
     if (empty($username)) {
         array_push($errors, "Username is required");
     }
