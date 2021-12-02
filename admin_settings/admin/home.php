@@ -40,20 +40,55 @@ include('../admin_server.php');
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body">
-          
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
+
+
+        <form action="control.php" method="POST" enctype="multipart/form-data">
+          <div class="modal-body">
+
+            <div class="form-group">
+              <label>Car Name</label>
+              <input type="text" name="car_name" class="form-control" placeholder="Vehicle Name" required>
+            </div>
+
+            <div class="form-group">
+              <label>Car Image</label>
+              <input type="file" name="car_image" id="images" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+              <label>Price</label>
+              <input type="text" name="price" class="form-control" placeholder="Price" required>
+            </div>
+
+            <div class="form-group">
+              <label>Year</label>
+              <input type="text" name="year" class="form-control" placeholder="Date" required>
+            </div>
+
+            <div class="form-group">
+              <label>Transmission</label>
+              <input type="text" name="transmission" class="form-control" placeholder="Transmission" required>
+            </div>
+
+            <div class="form-group">
+              <label>Mileage</label>
+              <input type="text" name="mileage" class="form-control" placeholder="Mileage" required>
+            </div>
+
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" name="save" class="btn btn-info">Save Changes</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
 
   <div class="container-fluid">
-    <button type = "button" class="btn btn-success" data-toggle="modal" data-target="#dash">
-         Add Car
+    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#dash">
+      Add Car
     </button>
 
 
