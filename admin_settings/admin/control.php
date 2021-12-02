@@ -30,8 +30,11 @@ if(isset($POST['save'])){
             if ($run){
                 move_uploaded_file(["car_image"]["tmp_name"],"cars/".$_FILES["car_image"]["name"]);
 
-                $_SESSION['SUCESS']= "Vehicle Upload Successfully";
+                $_SESSION['SUCCESS']= "Vehicle Upload Successfully";
 
+                header("Location: home.php");
+            }else{
+                $_SESSION['SUCCESS']= "Vehicle Not Upload";
                 header("Location: home.php");
             }
 
