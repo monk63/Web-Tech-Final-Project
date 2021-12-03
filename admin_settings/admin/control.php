@@ -4,54 +4,10 @@
     include('dbconfig.php');
     ob_end_clean();
 
-    /** 
-       if(isset($_POST['submit'])){
-        $car_name     =$_POST['car_name'];
-
-        //Source: https://www.11zon.com/zon/php/how-to-insert-image-in-mysql-database-using-php.php
-
-        $var1 = rand(1111,9999);  // generate random number in $var1 variable
-        $var2 = rand(1111,9999);  // generate random number in $var2 variable
-  
-        $var3 = $var1.$var2;  // concatenate $var1 and $var2 in $var3
-        $var3 = md5($var3);   // convert $var3 using md5 function and generate 32 characters hex number
-
-        $fnm = $_FILES["image"]["name"];    // get the image name in $fnm variable
-        $dst = "./cars/".$var3.$fnm;  // storing image path into the {all_images} folder with 32 characters hex number and file name
-        $dst_db = "cars/".$var3.$fnm; // storing image path into the database with 32 characters hex number and file name
-        move_uploaded_file($_FILES["image"]["tmp_name"],$dst);  // move image into the {all_images} folder with 32 characters hex number and image name   
-
-        $price        =$_POST['price'];
-        $year         =$_POST['years'];
-        $transmission =$_POST['transmission'];
-        $mileage      =$_POST['mileage'];
-    
-    //    $query = mysqli_query($connection,"INSERT INTO oldcars (car_name,car_image,price,years,transmission,mileage) VALUES  
-    //    ('$car_name','$car_image','$price','$year',$transmission,'$mileage')");
-
-    $query = mysqli_query($connection,"INSERT INTO oldcars (car_name,car_image,price,years,transmission,mileage) VALUES  
-        ('$car_name','$car_image','$price','$year','$transmission','$mileage')");
-            
-            
-
-             if($query)
-             {
-                echo '<script> alert("Data Inserted Seccessfully!"); </script>';  // alert message
-                header("location: home.php ");
-            }
-            else
-            {
-                echo '<script> alert("Error Uploading Data!"); </script>';  // when error occur
-                header("location: home.php ");
-            }
-            
-        }
-
-        */
-
 if(isset($_POST['submit'])){
+    $id=$_POST['id'];
     $car_name     =$_POST['car_name'];
- //  $target = "cars/".basename($_FILES['image']['name']);
+
     $car_image    =$_FILES['image']['name'];
 
     $price        =$_POST['price'];
@@ -84,10 +40,79 @@ if(isset($_POST['submit'])){
             }
 
         }
-        
-
-       
+          
 }
+
+if (isset($_POST['update'])){
+    $id = $_POST['edited_id'];
+
+    $car_name=$_POST['car_name'];
+    $car_image    =$_FILES['image']['name'];
+    $price        =$_POST['price'];
+    $year         =$_POST['years'];
+    $transmission =$_POST['transmission'];
+    $mileage      =$_POST['mileage'];
+
+    $data_query = "SELECT * FROM oldcars WHERE id='$id'";
+    $data_run=mysqli_query($connection,$data_query);
+
+    foreach($data_run as $fa_row)
+    {
+        if ($car_image == NULL)
+        {
+            $image_data = $fa_row['image'];
+        }else{
+            //Replacing the image
+            if ($img_path ="cars/".$fa_row['image']){
+                unlink($img_path);
+                $image_data=$car_image;
+            }
+        }
+    }
+
+    $query = "UPDATE oldcars SET car='$car_name',image='$car_image',price='$price',years='$year',transmission='$transmission',mileage='$mileage' WHERE id='$id' ";
+    $query_run = mysqli_query($connection,$query);
+
+    if ($query_run){
+
+        if($car_image == NULL){
+
+        $_SESSION['success']="Car Image Uploaded.";
+        header('Location: home.php');
+    } else{
+        move_uploaded_file($_FILES["image"]["tmp_name"], "cars/".$_FILES["image"]["name"]);
+        $_SESSION['success']="Car Image Updated.";
+        header('Location: home.php');             
+
+    }
+} else{
+
+    $_SESSION['success']="Update Failed";
+    header('Location: home.php');             
+
+    }
+}
+
+
+//Delete query
+if (isset($_POST['data_delete'])){
+
+    $id = $_POST['delete_id'];
+
+    $query = "DELETE FROM user WHERE id='$id' ";
+    $query_run = mysqli_query($connection,$query);
+
+    if($query_run){
+        $_SESSION['success']="Data Deleted Successfully";
+        header('Location: home.php');  
+    }else{
+        $_SESSION['success']="Data Not Deleted";
+        header('Location: home.php'); 
+
+    }
+
+}
+ 
 
 
 

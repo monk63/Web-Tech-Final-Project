@@ -1,4 +1,4 @@
-
+<!-- Source: https://www.youtube.com/watch?v=pft6jQHTU6U -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -26,14 +26,12 @@
 
 <body>
 
-<?php
- session_start();
- ob_start();
- include('dbconfig.php');
- ob_end_clean();
-?>
-
-
+  <?php
+  session_start();
+  ob_start();
+  include('dbconfig.php');
+  ob_end_clean();
+  ?>
 
   <!-- Modal -->
   <div class="modal fade" id="dash" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -92,31 +90,93 @@
   </div>
 
   <div class="container-fluid">
-      <?php
-        if(isset($_SESSION['success']) && $_SESSION['success'] !='')
-        {
-          echo '<h2 class="bg-primary text-white"> '.$_SESSION['success'].'</h2>';
-          unset($_SESSION['success']);
-        }
-        if(isset($_SESSION['status']) && $_SESSION['status'] !=' ')
-        {
-          echo '<h2 class= "bg-danger text-white">'.$_SESSION['status'].'</h2>';
-          unset($_SESSION['status']);
-        }
+    <?php
+    if (isset($_SESSION['success']) && $_SESSION['success'] != '') {
+      echo '<h2 class="bg-primary text-white"> ' . $_SESSION['success'] . '</h2>';
+      unset($_SESSION['success']);
+    }
+    if (isset($_SESSION['status']) && $_SESSION['status'] != ' ') {
+      echo '<h2 class= "bg-danger text-white">' . $_SESSION['status'] . '</h2>';
+      unset($_SESSION['status']);
+    }
 
-      ?>
-       
+    ?>
+
     <button type="button" class="btn btn-success" data-toggle="modal" data-target="#dash">
       Add Car
     </button>
-
-
   </div>
 
+  <!-- Car Table -->
+  <div class="table-responsive">
 
+  <!-- Fetching data from database -->
+    <?php
+    $connection = mysqli_connect("localhost","root","","middlemen");
+    $query = "SELECT * FROM oldcars";
+    $run = mysqli_query($connection,$query);
+    ?>
 
+ <!-- Table Head -->
+    <table class="table table-bordered" id="dataTable" width="100" collspacing="0">
+      <thread>
+        <tr>
+          <th>Car</th>
+          <th>Image</th>
+          <th>Price</th>
+          <th>Year</th>
+          <th>Transmission</th>
+          <th>Mileage</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+      <thread>
+        <tbody>
 
+        <?php
+          if(mysqli_num_rows($run) > 0){
+            while ($row = mysqli_fetch_assoc($run)){
 
+        ?>
+          <tr>
+              <td> <?php echo $row['car_name'] ?>    </td>
+              <td> <?php echo '<img src="cars/' .$row['car_image'].'" width="100px";height="100px";alt".pdf file"> '?>   
+             </td> 
+              <td> <?php echo $row['price'] ?>       </td>
+              <td> <?php echo $row['years']?>        </td>
+              <td> <?php echo $row['transmission']?> </td>
+              <td> <?php echo $row['mileage']?>      </td>
+
+              <!-- Edit button form  -->
+              <td>
+               
+              <form action="edit.php" method="POST">
+                <input type="hidden" name="edit_name" value="<?php echo $row['car_name'] ?>">
+                <button type="submit" name="data_edit" class="btn btn-info">Edit</button>
+              </form>
+    
+              </td>
+
+              <!-- Delete button form  -->
+              <td>
+              <form action="control.php" method="post">
+                  <input type="hidden" name="delete_id" value="<?php echo $row['id']; ?> ">
+                  <button type="submit" name="data_delete" class="btn btn-warning">Delete</button>
+              </form>
+            
+            </td>
+
+          </tr>
+          <?php
+            }
+          }else{
+            echo "No vehicle found!";
+          }
+
+          ?>
+        </tbody>
+    </table>
+  </div>
 
 </body>
 
