@@ -1,5 +1,10 @@
 <?php
-session_start();
+   session_start();
+//Database credentials
+$server_name= "localhost";
+$db_username= "root";
+$pass="";
+$db="middlemen";
 
 // initializing variables
 $username = "";
@@ -29,9 +34,6 @@ if (isset($_POST['reg_admin'])) {
      $regex = "/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix";
      // set error if not an email
      if(!preg_match($regex, $email)){array_push($errors, "Enter a valid email");}
-
-
-
 
     // form validation: ensure that the form is correctly filled ...
     // by adding (array_push()) corresponding error unto $errors array

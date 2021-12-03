@@ -1,6 +1,4 @@
-<?php
-include('../admin_server.php');
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -28,7 +26,11 @@ include('../admin_server.php');
 
 <body>
 
-  <h1>Middlemen Admin Dashboard</h1>
+<?php
+include('dbconfig.php');
+?>
+
+
 
   <!-- Modal -->
   <div class="modal fade" id="dash" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -62,7 +64,7 @@ include('../admin_server.php');
 
             <div class="form-group">
               <label>Year</label>
-              <input type="text" name="year" class="form-control" placeholder="Date" required>
+              <input type="date" name="years" class="form-control" placeholder="Date" required>
             </div>
 
             <div class="form-group">
@@ -100,6 +102,7 @@ include('../admin_server.php');
         }
 
       ?>
+       
     <button type="button" class="btn btn-success" data-toggle="modal" data-target="#dash">
       Add Car
     </button>
