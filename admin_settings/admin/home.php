@@ -27,7 +27,10 @@
 <body>
 
 <?php
-include('dbconfig.php');
+ session_start();
+ ob_start();
+ include('dbconfig.php');
+ ob_end_clean();
 ?>
 
 
@@ -64,7 +67,7 @@ include('dbconfig.php');
 
             <div class="form-group">
               <label>Year</label>
-              <input type="text" name="years" class="form-control" placeholder="Date" required>
+              <input type="date" name="years" class="form-control" placeholder="Date" required>
             </div>
 
             <div class="form-group">
