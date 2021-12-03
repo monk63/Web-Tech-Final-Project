@@ -54,7 +54,7 @@ include('dbconfig.php');
 
             <div class="form-group">
               <label>Car Image</label>
-              <input type="file" name="car_image" id="images" class="form-control" required>
+              <input type="file" name="image" id="images" class="form-control" required>
             </div>
 
             <div class="form-group">
@@ -64,7 +64,7 @@ include('dbconfig.php');
 
             <div class="form-group">
               <label>Year</label>
-              <input type="date" name="years" class="form-control" placeholder="Date" required>
+              <input type="text" name="years" class="form-control" placeholder="Date" required>
             </div>
 
             <div class="form-group">
@@ -81,7 +81,7 @@ include('dbconfig.php');
 
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="submit" name="save" class="btn btn-info">Save Changes</button>
+            <button type="submit" name="submit" class="btn btn-success">Save Changes</button>
           </div>
         </form>
       </div>

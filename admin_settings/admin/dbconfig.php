@@ -10,25 +10,10 @@ $connection = mysqli_connect("localhost","root","","middlemen");
 $dbconfig = mysqli_select_db($connection,$db_name);
 
 // Check connection
-if (!$connection) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+if ($connection->connect_error) {
+    die("Connection failed: " . $connection->connect_error);
+  }
+  echo " ";
 
 
 ?>
