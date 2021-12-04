@@ -2,12 +2,14 @@
      This page is only accessible to logged in users  -->
 
      <?php 
+       ob_start();
 	include('database/server.php');
+  ob_end_clean();
 ?>
 
 
 <?php 
-  session_start(); 
+ 
 
   if (!isset($_SESSION['username'])) {
   	$_SESSION['msg'] = "You must log in first";
@@ -208,6 +210,11 @@
               </div>
           </div>
 
+         
+
+          
+          
+
       </div>
 
       <div class="swiper-pagination"></div>
@@ -216,6 +223,41 @@
 
 </section>
 <!--- End of Vehicle Sliders Section --->
+ <!--- ADD add section --->
+
+<div class="swiper-slide box">
+            <?php
+             
+             ob_start();
+            include 'admin_settings/admin/dbconfig.php';
+            ob_end_clean();
+            $sel ="SELECT * FROM oldcars";
+            $que =mysqli_query($connection,$sel);
+
+            while($row = mysqli_fetch_array($que)){
+
+            ?>
+              <img src=" <?php echo '<img src="cars/' .$row['car_image'].'" alt".pdf file"> '?>" >
+              <div class="content">
+                  <h3>  <?php echo $row['car_name'] ?> </h3>
+                  <div class="price"> <span>Price : </span><?php echo $row['price'] ?> </div>
+                  <p>
+                      Home Used
+                      <span class="fas fa-circle"></span>  <?php echo $row['years']?> 
+                      <span class="fas fa-circle"></span> <?php echo $row['transmission']?> 
+                      <span class="fas fa-circle"></span> Diesel
+                      <span class="fas fa-circle"></span>  <?php echo $row['mileage']?>  
+                  </p>
+                  <a href="#" class="btn">CHECK OUT</a>
+              </div>
+              <?php
+            }
+              ?>
+          </div>
+
+
+
+
 
     <!-- footer -->
     
