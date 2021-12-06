@@ -42,7 +42,7 @@ if(isset($_POST['submit'])){
         }
           
 }
-
+//Edit
 if (isset($_POST['update'])){
     $id = $_POST['edited_id'];
 
@@ -53,24 +53,31 @@ if (isset($_POST['update'])){
     $transmission =$_POST['transmission'];
     $mileage      =$_POST['mileage'];
 
-    $data_query = "SELECT * FROM oldcars WHERE id='$id'";
-    $data_run=mysqli_query($connection,$data_query);
+     $data_query = "SELECT * FROM oldcars WHERE id='$id'";
+     $data_run=mysqli_query($connection,$data_query);
 
-    foreach($data_run as $fa_row)
-    {
+     $fa_row = mysqli_fetch_assoc($data_run);
+
+    
+    // foreach($data_run as $fa_row)
+    // {
         if ($car_image == NULL)
         {
             $image_data = $fa_row['image'];
         }else{
             //Replacing the image
-            if ($img_path ="cars/".$fa_row['image']){
+            if ($img_path = "cars/".$fa_row['car_image']){
                 unlink($img_path);
                 $image_data=$car_image;
             }
         }
-    }
+    // }
 
-    $query = "UPDATE oldcars SET car='$car_name',image='$car_image',price='$price',years='$year',transmission='$transmission',mileage='$mileage' WHERE id='$id' ";
+    $query = "UPDATE oldcars SET car_name='$car_name',car_image='$car_image',price='$price',years='$year',transmission='$transmission',mileage='$mileage' WHERE id='$id' ";
+
+    // echo $query;
+    // return;
+
     $query_run = mysqli_query($connection,$query);
 
     if ($query_run){
@@ -99,7 +106,7 @@ if (isset($_POST['data_delete'])){
 
     $id = $_POST['delete_id'];
 
-    $query = "DELETE FROM user WHERE id='$id' ";
+    $query = "DELETE FROM oldcars WHERE id='$id' ";
     $query_run = mysqli_query($connection,$query);
 
     if($query_run){

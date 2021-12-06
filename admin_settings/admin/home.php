@@ -151,7 +151,7 @@
               <td>
                
               <form action="edit.php" method="POST">
-                <input type="hidden" name="edit_name" value="<?php echo $row['car_name'] ?>">
+                <input type="hidden" name="edit_id" value="<?php echo $row['id'] ?>">
                 <button type="submit" name="data_edit" class="btn btn-info">Edit</button>
               </form>
     
