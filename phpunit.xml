@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- Booststrap color test -->
+<phpunit bootstrap="vendor/autoload.php"
+    colors="true"
+    stopOnFailure="false">
+
+    <testsuites>
+        <testsuites name="home-color">
+            <directory>test_results</directory>
+        </testsuites>
+    </testsuites>
+</phpunit>
