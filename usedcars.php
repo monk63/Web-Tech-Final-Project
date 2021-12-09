@@ -3,29 +3,26 @@
 <!-- Source of template: https://www.free-css.com/template-categories/cars
 Source of template: https://github.com/codeSkill2020/Complete-Car-Website/blob/main/Files%20-%20Copy.rar -->
 
+<?php
+  ob_start();
+  include('database/server.php');
+  ob_end_clean();
+?>
+
 <!-- This checks if the user is login
      This page is only accessible to logged in users  -->
-
-<?php
-ob_start();
-include('database/server.php');
-ob_end_clean();
-?>
-
 <?php
 
-
-if (!isset($_SESSION['username'])) {
-  $_SESSION['msg'] = "You must log in first";
-  header('location: registration/login.php');
-}
-if (isset($_GET['logout'])) {
-  session_destroy();
-  unset($_SESSION['username']);
-  header("location: registration/login.php");
-}
+  if (!isset($_SESSION['username'])) {
+    $_SESSION['msg'] = "You must log in first";
+    header('location: registration/login.php');
+  }
+  if (isset($_GET['logout'])) {
+    session_destroy();
+    unset($_SESSION['username']);
+    header("location: registration/login.php");
+  }
 ?>
-
 
 
 <!DOCTYPE html>
@@ -41,10 +38,6 @@ if (isset($_GET['logout'])) {
 
   <!-- Custom Styling -->
   <link rel="stylesheet" href="style/style.css">
-
-
-
-
 
   <!-- Boostrap Styling -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -215,24 +208,14 @@ if (isset($_GET['logout'])) {
             <a href="#" class="btn">CHECK OUT</a>
           </div>
         </div>
-
-
-
-
-
-
       </div>
 
       <div class="swiper-pagination"></div>
-
     </div>
-
   </section>
   <!--- End of Vehicle Sliders Section --->
+
   <!--- ADD add section --->
-
-
-
   <!-- Old cars -->
   <section class="article">
     <div class="container py-5">

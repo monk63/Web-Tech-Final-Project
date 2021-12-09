@@ -9,17 +9,15 @@
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
-   <!-- Custom Styling -->
-  <link rel="stylesheet" href="style/style.css">
- 
- 
+     <!-- Custom Styling -->
+    <link rel="stylesheet" href="style/style.css">
+  
     <!-- Boostrap Styling -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   
-<!-- font awesome cdn link  -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <title>The Middlemen Garage</title>
 
@@ -42,7 +40,6 @@
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
@@ -64,26 +61,21 @@
                     </div>
                 </div>
             </nav>
-
         </header>
-        <!--end header section -->
-
-      
+        <!--end header section -->      
     </div>
+
  <!--Review section -->
     <section class="reviews" id="reviews">
-
-        <h1 class="heading"> client's <span>review</span> </h1>
-    
+        <h1 class="heading"> Client's <span>Review</span> </h1>
         <div class="swiper review-slider">
-    
             <div class="swiper-wrapper">
-    
+
                 <div class="swiper-slide box">
                     <img src="images/pic-1.png" alt="">
                     <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt quod praesentium iusto id autem possimus assumenda at ut saepe.</p>
-                        <h3>john deo</h3>
+                        <p> I was really impressed with how the Middlemen team handle my purchase. The process was very simple and very effective communication. They contacted me with every steps taken. Highly impressed!</p>
+                        <h3>Michael Ofori</h3>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -97,8 +89,8 @@
                 <div class="swiper-slide box">
                     <img src="images/pic-2.png" alt="">
                     <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt quod praesentium iusto id autem possimus assumenda at ut saepe.</p>
-                        <h3>john deo</h3>
+                        <p>I have had satisfactory assistance from quite a number of agents.</p>
+                        <h3>Batman Aseye</h3>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -112,8 +104,8 @@
                 <div class="swiper-slide box">
                     <img src="images/pic-3.png" alt="">
                     <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt quod praesentium iusto id autem possimus assumenda at ut saepe.</p>
-                        <h3>john deo</h3>
+                        <p>Very impressive services and professional approach of all your agents I had engagement with. They can only do better.</p>
+                        <h3>Sena Gebe</h3>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -127,8 +119,8 @@
                 <div class="swiper-slide box">
                     <img src="images/pic-4.png" alt="">
                     <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt quod praesentium iusto id autem possimus assumenda at ut saepe.</p>
-                        <h3>john deo</h3>
+                        <p>Getting the best deal via middlemen couldn’t be easier. Saved myself 2500 cedis compared to haggling hard with another dealer who wasn’t affiliated with middlemen!</p>
+                        <h3>Jesse Agbenya</h3>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -142,8 +134,8 @@
                 <div class="swiper-slide box">
                     <img src="images/pic-5.png" alt="">
                     <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt quod praesentium iusto id autem possimus assumenda at ut saepe.</p>
-                        <h3>john deo</h3>
+                        <p>So easy to use and well pleased with service and prices received</p>
+                        <h3>Dianella</h3>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -157,8 +149,8 @@
                 <div class="swiper-slide box">
                     <img src="images/pic-6.png" alt="">
                     <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt quod praesentium iusto id autem possimus assumenda at ut saepe.</p>
-                        <h3>john deo</h3>
+                        <p>I found the middlemen website great for finding car deals. Very easy to use and you can save a signifcant amount of money.</p>
+                        <h3>Selasie Gerald</h3>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -173,8 +165,8 @@
                 <div class="swiper-slide box">
                     <img src="images/pic-7.png" alt="">
                     <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt quod praesentium iusto id autem possimus assumenda at ut saepe.</p>
-                        <h3>john deo</h3>
+                        <p>Very good service and with attention to detail. Very satisfied.</p>
+                        <h3>Melvin Essel</h3>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -188,8 +180,8 @@
                 <div class="swiper-slide box">
                     <img src="images/pic-8.png" alt="">
                     <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt quod praesentium iusto id autem possimus assumenda at ut saepe.</p>
-                        <h3>john deo</h3>
+                        <p>Very easy to use, speedy, lots of immediate response and a good offer; sold and collected next day. Amazingly hassle free</p>
+                        <h3>Aba Quarm</h3>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -203,8 +195,8 @@
                 <div class="swiper-slide box">
                     <img src="images/pic-9.png" alt="">
                     <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt quod praesentium iusto id autem possimus assumenda at ut saepe.</p>
-                        <h3>john deo</h3>
+                        <p>Found it easy and hassle free when purchasing new car. Would definitely use again..</p>
+                        <h3>Abenaa</h3>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -220,8 +212,8 @@
                 <div class="swiper-slide box">
                     <img src="images/pic-10.png" alt="">
                     <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt quod praesentium iusto id autem possimus assumenda at ut saepe.</p>
-                        <h3>john deo</h3>
+                        <p>Bought a car for my girlfriend through middlemen garage best way to purchase a car.</p>
+                        <h3>Ayeyi Dyan</h3>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -232,18 +224,7 @@
                     </div>
                 </div>
 
-
-
-
-
-
-
-
-
-
-
-            </div>
-            
+            </div>        
     
             <div class="swiper-pagination"></div>
     
