@@ -76,20 +76,24 @@
       <div class="team_img">
         <img src="images/pic-1.png" alt="Team_image">
       </div>
-      <h3>Paul Doe</h3>
-      <p class="role">UI developer</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
+      <h3>Michael Ofori</h3>
+      <p class="role">CEO</p>
+      <p>Having founded the middlemen with the mission of helping people choose and buy the best car for them, 
+          Ofori has built middlemen garage into the most exciting marketplace and media brand in the automotive sector.
+           Prior to founding middlemen garage, he worked as a data sciene analyst at Space-X and is professional swimmer.</p>
     </div>
     <div class="team_member">
       <div class="team_img">
-        <img src="images/pic-10.png" alt="Team_image">
+        <img src="images/pic-21.jpg" alt="Team_image">
       </div>
-      <h3>Rosie Meg</h3>
-      <p class="role">Tester</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p></div>
+      <h3>Bradley Bands</h3>
+      <p class="role">Co-Founder & Chief Technology Officer</p>
+      <p> Working alongside James Hind, Bradley built the original middlemen garage platform single-handedly. Co-Founder David now leads our ever-expanding team of engineers. David ensures that we maintain high levels of platform performance whilst delivering complex expansions, integrations and technology support across all of our markets.
+
+      </p></div>
     <div class="team_member">
       <div class="team_img">
-        <img src="images/pic-8.png" alt="Team_image">
+        <img src="images/pic-21.jpg" alt="Team_image">
       </div>
       <h3>Alex Wood</h3>
       <p class="role">Support Lead</p>
