@@ -21,10 +21,15 @@
   <link rel="stylesheet" href="/admin_settings/admin/style/admin_style.css">
 
   <title>The Middlemen Garages</title>
-
+  <style>
+    .background {
+        background-image: url("https://images.unsplash.com/photo-1619252584172-a83a949b6efd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80");
+   
+    }
+</style>
 </head>
 
-<body>
+<body class="background" style="font-weight:bold">
 
   <?php
   session_start();
@@ -177,6 +182,10 @@
         </tbody>
     </table>
   </div>
+
+  <li class="nav-item">
+                <a class="nav-link"  style="color: red;" href="login_admin.php">Logout</a>
+              </li>
 
 </body>
 
