@@ -235,12 +235,12 @@ if (isset($_GET['logout'])) {
             <div class="card">
               <img src="admin_settings/admin/cars/<?php echo $row['car_image']; ?>">
               <p class="pt-3"><a href="#"><?php echo $row['car_name'] ?></a></p>
-              <span id="cost"><?php echo $row['price'] ?> </span>
-              <span id="name">HATCHBACK</span>
+              <span id="cost">GHS : <?php echo $row['price'] ?> </span>
+              
               <small>
                 <a href="#"><?php echo $row['years'] ?></a>
                 <a href="#"><?php echo $row['transmission'] ?> </a>
-                <a href="#"> <?php echo $row['mileage'] ?></a>
+                <a href="#"> <?php echo $row['mileage'] ?>.miles</a>
               </small>
             </div>
           </div>

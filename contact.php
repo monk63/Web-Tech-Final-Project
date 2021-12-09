@@ -88,16 +88,20 @@
       </div>
       <h3>Bradley Bands</h3>
       <p class="role">Co-Founder & Chief Technology Officer</p>
-      <p> Working alongside James Hind, Bradley built the original middlemen garage platform single-handedly. Co-Founder David now leads our ever-expanding team of engineers. David ensures that we maintain high levels of platform performance whilst delivering complex expansions, integrations and technology support across all of our markets.
+      <p> Working alongside Michael Ofori, Bradley built the original middlemen garage platform single-handedly. 
+          Co-Founder David now leads our ever-expanding team of engineers. Bradley ensures that we maintain high levels of platform performance whilst delivering complex expansions, 
+          integrations and technology support across all of our markets.
 
       </p></div>
     <div class="team_member">
       <div class="team_img">
-        <img src="images/pic-21.jpg" alt="Team_image">
+        <img src="images/pic-22.jpg" alt="Team_image">
       </div>
-      <h3>Alex Wood</h3>
-      <p class="role">Support Lead</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
+      <h3>Silas Signam</h3>
+      <p class="role">Chief Operating Officer</p>
+      <p>Silas leads our commercial, operations, and international teams.
+           Prior to middlemen, Silas was CMO of online luxury fashion retail platform Farfetch in Ghana.
+        </p>
     </div>
   </div>
 </div>
