@@ -7,9 +7,7 @@
 if(isset($_POST['submit'])){
     $id=$_POST['id'];
     $car_name     =$_POST['car_name'];
-
     $car_image    =$_FILES['image']['name'];
-
     $price        =$_POST['price'];
     $year         =$_POST['years'];
     $transmission =$_POST['transmission'];

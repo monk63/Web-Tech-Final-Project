@@ -6,8 +6,8 @@
     stopOnFailure="false">
 
     <testsuites>
-        <testsuites name="home-color">
-            <directory>test_results</directory>
-        </testsuites>
+        <testsuite name="usedcars">
+            <directory>tests</directory>
+        </testsuite>
     </testsuites>
 </phpunit>

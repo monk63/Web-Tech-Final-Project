@@ -1,3 +1,5 @@
+<!-- Source: https://www.youtube.com/watch?v=Thw33qJ5DXo -->
+<!-- Source: https://codewithawa.com/posts/complete-user-registration-system-using-php-and-mysql-database -->
 <?php 
 	include('database/server.php');
 ?>
@@ -27,8 +29,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-
   <!-- Custom Styling -->
   <link rel="stylesheet" href="style/style.css">
 
@@ -38,7 +38,6 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
 
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">

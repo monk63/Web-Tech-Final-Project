@@ -1,3 +1,5 @@
+<!-- Source: https://codewithawa.com/posts/complete-user-registration-system-using-php-and-mysql-database -->
+
 <?php 
     include('../admin_server.php')
 ?>
