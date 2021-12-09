@@ -93,10 +93,8 @@
     <div class="cars" id="cars">
         <div class="heading">
             <span>New Cars</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde deleniti inventore atque reprehenderit
-                sapiente ea animi ad minima ullam quam dolores eos, hic deserunt libero possimus eaque eveniet? Quasi,
-                mollitia!</p>
-
+            <p>Compare the best new car deals
+                 Browse the best deals currently available on middlemen
         </div>
     </div>
 
@@ -104,17 +102,13 @@
 
      <!--- Feature Car Section --->
      <section class="featured" id="featured">
-
         <h1 class="heading"> <span>New Featured</span> Cars </h1>
-    
         <div class="swiper featured-slider">
-    
            <div class="swiper-wrapper">
-    
                 <div class="swiper-slide box">
                     <img src="images/vehicle-1.png" alt="">
                     <div class="content">
-                        <h3>new model</h3>
+                        <h3>Toyota Camry 2012
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -122,7 +116,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
                         </div>
-                        <div class="price">$55,000/-</div>
+                        <div class="price">GHS 59,000</div>
                         <a href="#" class="btn">check out</a>
                     </div>
                 </div>
@@ -130,7 +124,7 @@
                 <div class="swiper-slide box">
                     <img src="images/vehicle-2.png" alt="">
                     <div class="content">
-                        <h3>new model</h3>
+                        <h3>Toyota Corrolla</h3>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -138,7 +132,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
                         </div>
-                        <div class="price">$55,000/-</div>
+                        <div class="price">GHS 67,000</div>
                         <a href="#" class="btn">check out</a>
                     </div>
                 </div>
@@ -146,7 +140,7 @@
                 <div class="swiper-slide box">
                     <img src="images/vehicle-3.png" alt="">
                     <div class="content">
-                        <h3>new model</h3>
+                        <h3>nToyata</h3>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>

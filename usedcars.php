@@ -4,24 +4,24 @@
 Source of template: https://github.com/codeSkill2020/Complete-Car-Website/blob/main/Files%20-%20Copy.rar -->
 
 <?php
-  ob_start();
-  include('database/server.php');
-  ob_end_clean();
+ob_start();
+include('database/server.php');
+ob_end_clean();
 ?>
 
 <!-- This checks if the user is login
      This page is only accessible to logged in users  -->
 <?php
 
-  if (!isset($_SESSION['username'])) {
-    $_SESSION['msg'] = "You must log in first";
-    header('location: registration/login.php');
-  }
-  if (isset($_GET['logout'])) {
-    session_destroy();
-    unset($_SESSION['username']);
-    header("location: registration/login.php");
-  }
+if (!isset($_SESSION['username'])) {
+  $_SESSION['msg'] = "You must log in first";
+  header('location: registration/login.php');
+}
+if (isset($_GET['logout'])) {
+  session_destroy();
+  unset($_SESSION['username']);
+  header("location: registration/login.php");
+}
 ?>
 
 
@@ -221,16 +221,14 @@ Source of template: https://github.com/codeSkill2020/Complete-Car-Website/blob/m
     <div class="container py-5">
       <h1 class="text-center">Avaliable Cars</h1><br>
       <div class="row">
-        <?php
 
+        <?php
         ob_start();
         include 'admin_settings/admin/dbconfig.php';
         ob_end_clean();
         $sel = "SELECT * FROM oldcars";
         $que = mysqli_query($connection, $sel);
-
         while ($row = mysqli_fetch_array($que)) {
-
         ?>
 
           <div class="col-lg-4 wow bounceIn" data-wow-delay="0.3s">
@@ -254,26 +252,23 @@ Source of template: https://github.com/codeSkill2020/Complete-Car-Website/blob/m
   <!-- End of Old cars -->
 
   <!-- footer -->
-
   <div class="footer">
     <div class="footer-content">
-
       <div class="footer-section about">
         <h1 class="logo-text"><span>The</span>Middlemen</h1>
         <p>
           <img src="images/logo.png" height="100" width="100" />
           The web portal to the world of wholesale auction.
-
         </p>
         <div class="contact">
           <span><i class="fas fa-phone"></i> &nbsp; +233 20 95 35 914</span>
           <span><i class="fas fa-envelope"></i> &nbsp; info@themiddlemen59@gmail.com</span>
         </div>
         <div class="socials">
-          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/the_middlemen_/"><i class="fab fa-facebook"></i></a>
           <a href="https://www.instagram.com/the_middlemen_/"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.instagram.com/the_middlemen_/"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/the_middlemen_/"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
 
@@ -311,14 +306,11 @@ Source of template: https://github.com/codeSkill2020/Complete-Car-Website/blob/m
           </button>
         </form>
       </div>
-
     </div>
-
     <div class="footer-bottom">
       &copy; The Middlemen Garage. Est. 2021. All rights reserved
     </div>
   </div>
-
   <!-- End of footer -->
 
   <!-- Slider JS -->
@@ -333,12 +325,6 @@ Source of template: https://github.com/codeSkill2020/Complete-Car-Website/blob/m
   <!-- Slick Carousel -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-
-
-
-
 </body>
-
-
 
 </html>
