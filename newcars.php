@@ -138,9 +138,9 @@
                 </div>
     
                 <div class="swiper-slide box">
-                    <img src="images/vehicle-3.png" alt="">
+                    <img src="images/vehicle-13.png" alt="">
                     <div class="content">
-                        <h3>nToyata</h3>
+                        <h3>Toyata Yaris</h3>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -148,7 +148,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
                         </div>
-                        <div class="price">$55,000/-</div>
+                        <div class="price">GHS 29,000</div>
                         <a href="#" class="btn">check out</a>
                     </div>
                 </div>
@@ -156,15 +156,13 @@
                 <div class="swiper-slide box">
                     <img src="images/vehicle-4.png" alt="">
                     <div class="content">
-                        <h3>new model</h3>
+                        <h3>Hyundia ix35</h3>
                         <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
                         </div>
-                        <div class="price">$55,000/-</div>
+                        <div class="price">GHs 46,000</div>
                         <a href="#" class="btn">check out</a>
                     </div>
                 </div>
@@ -181,15 +179,14 @@
              <div class="swiper-slide box">
                  <img src="images/vehicle-5.png" alt="">
                  <div class="content">
-                     <h3>new model</h3>
+                     <h3>Hyundia Accent</h3>
                      <div class="stars">
-                         <i class="fas fa-star"></i>
                          <i class="fas fa-star"></i>
                          <i class="fas fa-star"></i>
                          <i class="fas fa-star"></i>
                          <i class="fas fa-star-half-alt"></i>
                      </div>
-                     <div class="price">$55,000/-</div>
+                     <div class="price">GHSs 34,000</div>
                      <a href="#" class="btn">check out</a>
                  </div>
              </div>
@@ -197,7 +194,7 @@
              <div class="swiper-slide box">
                  <img src="images/vehicle-6.png" alt="">
                  <div class="content">
-                     <h3>new model</h3>
+                     <h3>Kia Forte</h3>
                      <div class="stars">
                          <i class="fas fa-star"></i>
                          <i class="fas fa-star"></i>
@@ -205,31 +202,30 @@
                          <i class="fas fa-star"></i>
                          <i class="fas fa-star-half-alt"></i>
                      </div>
-                     <div class="price">$55,000/-</div>
+                     <div class="price">$34,000/-</div>
                      <a href="#" class="btn">check out</a>
                  </div>
              </div>
  
              <div class="swiper-slide box">
-                 <img src="images/vehicle-1.png" alt="">
+                 <img src="images/vehicle-14.png" alt="">
                  <div class="content">
-                     <h3>new model</h3>
+                     <h3>Toyota rav4</h3>
                      <div class="stars">
-                         <i class="fas fa-star"></i>
                          <i class="fas fa-star"></i>
                          <i class="fas fa-star"></i>
                          <i class="fas fa-star"></i>
                          <i class="fas fa-star-half-alt"></i>
                      </div>
-                     <div class="price">$55,000/-</div>
+                     <div class="price">Ghs 56,000</div>
                      <a href="#" class="btn">check out</a>
                  </div>
              </div>
  
              <div class="swiper-slide box">
-                 <img src="images/vehicle-2.png" alt="">
+                 <img src="images/vehicle-15.png" alt="">
                  <div class="content">
-                     <h3>new model</h3>
+                     <h3>Ford</h3>
                      <div class="stars">
                          <i class="fas fa-star"></i>
                          <i class="fas fa-star"></i>
@@ -237,7 +233,7 @@
                          <i class="fas fa-star"></i>
                          <i class="fas fa-star-half-alt"></i>
                      </div>
-                     <div class="price">$55,000/-</div>
+                     <div class="price">Ghs 64,000</div>
                      <a href="#" class="btn">check out</a>
                  </div>
              </div>
