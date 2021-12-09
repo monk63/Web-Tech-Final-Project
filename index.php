@@ -8,7 +8,7 @@
 <!-- This checks if the user is login
      This page is only accessible to logged in users  -->
 <?php 
-  session_start(); 
+ 
   if (!isset($_SESSION['username'])) {
   	$_SESSION['msg'] = "You must log in first";
   	header('location: registration/login.php');
@@ -139,7 +139,7 @@
           <div class="carousel-caption d-none d-md-block">
             <h5>Welcome To The Middlemen Carage</h5>
             <p>The Best Place to Buy Used Cars at Affordable Prices</p>
-            <a class="btn btn-outline-light btn-lg" href="usedcars.html">Used Cars</a>
+            <a class="btn btn-outline-light btn-lg" href="usedcars.php">Used Cars</a>
           </div>
         </div>
         <div class="carousel-item">
@@ -147,7 +147,7 @@
           <div class="carousel-caption d-none d-md-block">
             <h5>Welcome To The Middlemen Carage</h5>
             <p>The Best Place to New Cars at the Best Market Rate</p>
-            <a class="btn btn-outline-light btn-lg" href="newcars.html">Fresh Wheels</a>
+            <a class="btn btn-outline-light btn-lg" href="newcars.php">Fresh Wheels</a>
 
           </div>
         </div>
@@ -156,7 +156,7 @@
           <div class="carousel-caption d-none d-md-block">
             <h5>Welcome To The Middlemen Carage</h5>
             <p>Get in Touch With a Team of Highly Skilled Personnels.</p>
-            <a class="btn btn-outline-light btn-lg" href="usedcars.html">Contact Us</a>
+            <a class="btn btn-outline-light btn-lg" href="contact.php">Contact Us</a>
           </div>
         </div>
       </div>
@@ -183,12 +183,12 @@
       </p>
       <h1> CONTACT </h1>
       <p class="lead"> Working 24/7 to get you the best car deals
-      <p>
-
-
+      <p  class="lead"> in the market.
       </p>
-      in the market. <br> Get in touch with our team today.</p>
-      <a class="btn btn-secondary btn-md" href="#"> CLICK FOR MORE ENQUIRES</a>
+      <br> 
+      Get in touch with our team today.
+    </p>
+      <a class="btn btn-secondary btn-md" href="contact.php"> CLICK FOR MORE ENQUIRES</a>
       <p>
 
 
@@ -206,8 +206,8 @@
     <div class="icons">
       <i class="fas fa-home"></i>
       <div class="content">
-        <h3>150+</h3>
-        <p>branches</p>
+        <h3>20+</h3>
+        <p>Branches</p>
       </div>
     </div>
 
@@ -215,23 +215,23 @@
       <i class="fas fa-car"></i>
       <div class="content">
         <h3>4770+</h3>
-        <p>cars sold</p>
+        <p>Cars Sold</p>
       </div>
     </div>
 
     <div class="icons">
       <i class="fas fa-users"></i>
       <div class="content">
-        <h3>320+</h3>
-        <p>happy clients</p>
+        <h3>4000+</h3>
+        <p>Satisfied Clients</p>
       </div>
     </div>
 
     <div class="icons">
       <i class="fas fa-car"></i>
       <div class="content">
-        <h3>1500+</h3>
-        <p>news cars</p>
+        <h3>200+</h3>
+        <p>Garages in Accra</p>
       </div>
     </div>
 
@@ -268,16 +268,16 @@
         <h2>Quick Links</h2>
         <br>
         <ul>
-          <a href="#">
+          <a href="contact.php">
             <li>Customer Reviews</li>
           </a>
-          <a href="#">
+          <a href="about.php">
             <li>Services</li>
           </a>
-          <a href="#">
+          <a href="contact.php">
             <li>Stories</li>
           </a>
-          <a href="#">
+          <a href="about.php">
             <li>News</li>
           </a>
           <a href="#">

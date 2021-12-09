@@ -12,7 +12,6 @@ include('database/server.php');
 ob_end_clean();
 ?>
 
-Source :
 <?php
 
 
